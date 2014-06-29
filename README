@@ -11,3 +11,14 @@ It tries to copy as many FLAC tags to MP3 tags as possible.  If there are
 photos in the same folder, it will try to embed them into the MP3 based on
 the filename (e.g. images containing the word "front" are embedded and given
 the "Front Cover" tag.
+
+
+Configuration
+=============
+
+The config file follows ini-style syntax. e.g.:
+
+    [flacsync]
+    numworkers: 8
+    musicdir: /mnt/music/beets-Sammlung
+    mp3dir: /mnt/music/mp3s
