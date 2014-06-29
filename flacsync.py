@@ -60,7 +60,7 @@ class Config:
         if not os.path.exists(cfg) or os.path.isdir(cfg):
             return;
 
-        cfgp = configparser.ConfigParser();
+        cfgp = ConfigParser.ConfigParser();
         cfgp.read([self.config]);
 
         for new in cfgp.items('flacsync'):
